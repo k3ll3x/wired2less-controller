@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#013E38"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="354dp"
+        android:layout_height="261dp"
+        android:layout_marginTop="32dp"
+        android:background="#212D70"
+        android:text="@string/log"
+        android:textColor="#DADADA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/connect_btn"
+        android:layout_width="168dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/connect"
+        app:backgroundTint="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/server"
+        android:layout_width="297dp"
+        android:layout_height="68dp"
+        android:autofillHints=""
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/server_ip_port"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/connect_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ip_port" />
+
+    <TextView
+        android:id="@+id/ip_port"
+        android:layout_width="257dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="32dp"
+        android:background="#9F9976"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/log" />
+</androidx.constraintlayout.widget.ConstraintLayout>
